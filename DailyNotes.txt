@@ -1,0 +1,266 @@
+
+Language:
+========
+
+		Communication-->human
+		
+			telugu,hindi,english,tamil.....
+			
+			26
+
+Programming Lanaguage:
+=======================
+
+			Communication-->machine/computer
+			
+			devices --->software-->application-->set of programs/instructions--->Programming language
+			
+						python-->keywords   if,else,class.....
+						1.x
+						2.x
+						3.x
+						
+							3.15
+
+			python,java,.net,c,c++
+
+		guido van rossam  --1989  national research ins
+
+	1991 feb 20th
+
+python .org
+
+	shell
+
+why python	
+
+
+1)easy to learn (syntax) 30+
+2)Rich library         numpy,pandas,matplotlib,seaborn,keras,sickitlearn    pip  install 
+		easy 	
+		
+Welcome.java
+	class  Welcome{
+		public  static void main(String args[])
+			{
+			System.out.println("Welcome to india")
+			}
+	}
+	
+python--->the complete python monty circus 
+
+1)oops features from C++
+2)functional programming features C 
+3)modular programming  from modula-3
+
+				C,ABC 
+
+
+Features of python
+
+1)syntax 
+2)rich library 
+3)platform independent   WORA  
+							machine1        machine2
+						windows os				linux
+							py app
+4)portable 
+						22.34				22.32
+5)free source and open source		  jython	,cpython,rubypython		
+6)dynamic typed PL
+
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 
+'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+
+
+	java static typed 
+			int age=33
+folder -->package-->library
+diff kinds app
+1)desktop apps        core python,tkinter
+2)webapp                   django,flask
+3)REST app
+4)AI
+5)ML
+6)IOT
+7)gaming 
+8)networking .......
+
+identifiers:
+=========
+any name in python will call it as identifier
+					functionname,variablename,classname,objname.....
+	a-z
+	A-Z
+	0-9   (we can use digits  but we cannot start with digit )
+	_
+variables:
+========
+	placeholder,container
+				variable is a name of memory location
+					
+					age=33
+variablename=value
+		employee
+		eid  ename salary desg   address tool doj dob......
+		
+		eid   50775
+		name			sandeep
+		age     33
+		salary      22.67
+		address    2-2/91,
+		doj 
+		aadhar 12 digits 
+		
+
+
+datatypes:
+========
+				int,string,bool(t,f),float,any,complex,None-->one value
+long--2.x
+			print,type,id,int(),float(),bool()
+PEP8
+
+			student_marks=12
+		snake_case
+		PascalCase
+		SoftwareEmployee
+	
+	complex-->2+5j
+						real part +imaginary 
+
+bool(x)
+
+				x is -->0  means False
+						-->non-zero means True
+						
+			   x is empty-->False 
+					non empty-->True
+					
+					Advanced DT-->List,Tuple,Set,FSet,Dict
+
+C:\Users\SomavarapuSandeep>py
+Python 3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("welcome")
+welcome
+>>> age=33
+>>> name="sandeep"
+>>> print(age)
+33
+>>> eid=12345
+>>> type(eid)
+<class 'int'>
+>>> name='sandeep'
+>>> type(name)
+<class 'str'>
+>>> salary=22.5
+>>> type(salary)
+<class 'float'>
+>>> result=true
+Traceback (most recent call last):
+  File "<python-input-17>", line 1, in <module>
+    result=true
+           ^^^^
+>>> id=123
+>>> name="surehs"
+>>> salary=23000
+>>> type(id)
+<class 'int'>
+>>> type(name)
+<class 'str'>
+>>> type(salary)
+<class 'int'>
+>>> marks=23
+>>> marks+2
+25
+>>> cal="234"
+>>> cal+2
+Traceback (most recent call last):
+  File "<python-input-45>", line 1, in <module>
+    cal+2
+    ~~~^~
+TypeError: can only concatenate str (not "int") to str
+>>> type(cal)
+<class 'str'>
+>>> cal+"suresh"
+'234suresh'
+>>> int(cal)+2
+236
+>>> a=23.4
+>>> type(a)
+<class 'float'>
+>>> int(a)
+23
+>>> float(12)
+12.0
+>>> str(89)
+'89'
+>>> bool('True')
+True
+>>> bool('False')
+True
+>>> bool('sandeep')
+True
+>>> bool('')
+False
+>>> bool(123)
+True
+>>> bool(12)
+True
+>>> bool(2)
+True
+>>> bool(0)
+False
+>>> complex(10)
+(10+0j)
+>>> complex(10.5)
+(10.5+0j)
+>>> complex(False)
+0j
+>>> complex("10")
+(10+0j)
+>>> str("123")
+'123'
+>>> int("123")
+123
+>>> int("sandeep")
+Traceback (most recent call last):
+  File "<python-input-68>", line 1, in <module>
+    int("sandeep")
+    ~~~^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'sandeep'
+>>> bin(10)
+'0b1010'
+>>> bin(12)
+'0b1100'
+>>> oct(0b1100)
+'0o14'
+>>> oct(0B1100)
+'0o14'
+>>> hex(100)
+'0x64'
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
