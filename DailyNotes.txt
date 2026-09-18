@@ -1,4 +1,5 @@
-
+cloud labs
+git hub link
 Language:
 ========
 
@@ -67,7 +68,7 @@ Features of python
 4)portable 
 						22.34				22.32
 5)free source and open source		  jython	,cpython,rubypython		
-6)dynamic typed PL
+6)dynamic typed PL         a=123
 
 ['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 
 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
@@ -116,9 +117,10 @@ variablename=value
 
 datatypes:
 ========
-				int,string,bool(t,f),float,any,complex,None-->one value
+				int,string,bool(t,f),float,any,complex,None-->one value   immutable-->fixed 
+				GC
 long--2.x
-			print,type,id,int(),float(),bool()
+			print,type,id,int(),float(),bool(),str()
 PEP8
 
 			student_marks=12
@@ -136,7 +138,8 @@ bool(x)
 						
 			   x is empty-->False 
 					non empty-->True
-					
+				
+muttable ,immutable				
 					Advanced DT-->List,Tuple,Set,FSet,Dict
 
 C:\Users\SomavarapuSandeep>py
@@ -241,26 +244,381 @@ ValueError: invalid literal for int() with base 10: 'sandeep'
 >>> hex(100)
 '0x64'
 
+Operators:
+		
+		1)arithmetic operators        + -  * /  %  //(floor division)  **(exponent/power operator )
+		2)relational operators         >,<,>=,<= ,==,!=
+		3)logical operators				and ,or,not
+											and-->if both arguments are True then only the result is True 
+											or-->if  atleast one argument is True the result is True 
+											not-->complement
+											
+											True and False-->False
+											True and True-->True
+											True or False-->True
+											not False -->True
+											
+												0 means False
+												non-zero means True
+					x and y		-->if x is evaluates to false return x otherwise return y
+					10 and 20   
+											empty string is False 	
+											
+											1 0 -->1
+											0 1 -->1
+											11-->0
+											00 -->0
+		4)bitwise operators          &,|,^,~,<<,>>
+		
+							&	-->if both bits are 1 then only the result 1  otherwise result is 0
+							|	-->if atleast one bit is 1 then only the result 1  otherwise result is 0
+							^-->if  bits are  diff  then only the result 1  otherwise result is 0
+							~-->bitwise complement operator
+							
 	
+<<  
+ 10<<2 
+					001010
+					00101000
+	40
+>>	
+10>>2 -->
+			001010
+			000010
+			2
+		5.Assignment operators:   PCEP,PCAP
+		===================
+
+		a=10
+			a=a+1   ,a+=1
+			a=a-1,   a-=1
+ternary operators
+
+C:\Users\SomavarapuSandeep>py
+Python 3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> a=10
+>>> b=2
+>>> print('a+b = ',a+b)
+a+b =  12
+>>> print('a-b = ',a-b)
+a-b =  8
+>>> print('a*b = ',a*b)
+a*b =  20
+>>> print('a/b = ',a/b)
+a/b =  5.0
+>>> print('a//b = ',a//b)
+a//b =  5
+>>> type(a)
+<class 'int'>
+>>> type(b)
+<class 'int'>
+>>> print('12//3 = ',12//3)
+12//3 =  4
+>>> print('11//3 = ',11//3)
+11//3 =  3
+>>> print('a**b',a**b)
+a**b 100
+>>> print('10**3 = ',10**3)
+10**3 =  1000
+>>> kpmg+india
+Traceback (most recent call last):
+  File "<python-input-13>", line 1, in <module>
+    kpmg+india
+    ^^^^
+NameError: name 'kpmg' is not defined
+>>> 'kpmg'+'india'
+'kpmgindia'
+>>> durga*2
+Traceback (most recent call last):
+  File "<python-input-15>", line 1, in <module>
+    durga*2
+    ^^^^^
+NameError: name 'durga' is not defined
+>>> 'durga'*2
+'durgadurga'
+>>> print(a>b)
+True
+>>> print(a<b)
+False
+>>> print(a<=b)
+False
+>>> print(a>=b)
+True
+>>> a==b
+False
+>>> a!=b
+True
+>>> True and True
+True
+>>> True and False
+False
+>>> True of False
+  File "<python-input-25>", line 1
+    True of False
+         ^^
+SyntaxError: invalid syntax
+>>> True or False
+True
+>>> 10 and 20
+20
+>>> 11 and 21
+21
+>>> 0 and 90
+0
+>>> not 10
+False
+>>> not 0
+True
+>>> 'sandeep' and 'somavarapu'
+'somavarapu'
+>>> '' and 'somavarapu'
+''
+>>> True & True
+True
+>>> True & False
+False
+>>> True ? False
+  File "<python-input-36>", line 1
+    True ? False
+         ^
+SyntaxError: invalid syntax
+>>> True | False
+True
+>>> 4&5
+4
+>>> 4|5
+5
+>>> 4^5
+1
+>>> 4<<2
+16
+>>> 20<<2
+80
+>>> 10<<2
+40
+
+
+
+python-->.py
+
+conditional statements:flow control statements
+
+		if,else,elif
+py -->user understable lang-->pyc
+PVM-->machine language 
+interpreter(compiler)-->pyc -->execute    py filename   pyc-->i--
+
+			pvm
+				interpreter
+							compiler
+
+IDE-->VisualStudio Code ,pycharm,eclipse,
 
 
 
 
+break                        stop     loop exit
+continue                skip        current interation skipped
+int,str,bool,complex,float..... one value   immutable
+Advanced DT:list,set,tuple,frozenset,dict-->multiple values 
+
+if we have requirement to store group of objects as single entity 
+
+List:
+====
+1.duplicates are allowed 
+2.insertion order is preserved 
+3.[]
+4.muttable
+5. haterogeneous object are allowed 
+
+Tuple:
+=======tuple is imuttable version of list
+1.duplicates are allowed 
+2.insertion order is preserved 
+3.()
+4.imuttable
+5. haterogeneous object are allowed 
+
+Set:
+=====
+1.duplicates are not allowed 
+2.insertion order is  not preserved 
+3.{}
+4.muttable
+5. haterogeneous object are allowed 
+
+Frozenset:
+========
+1.duplicates are not allowed 
+2.insertion order is  not preserved 
+3.frozenset({})
+4.imuttable
+5. haterogeneous object are allowed 
+
+dict: it is group of items
+====
+1)key,value pair  (item)
+2)key must be unique 
+3)values can be duplicate
+4)muttable 
+5)haterogeneous
+6){}
 
 
+>>> emps=['suresh','ramesh','rajesh','naresh','kumar','sandeep','ramesh','kumar']
+>>> type(emps)
+<class 'list'>
+>>> print(emps)
+['suresh', 'ramesh', 'rajesh', 'naresh', 'kumar', 'sandeep', 'ramesh', 'kumar']
+>>> emps.append('mahesh')
+>>> print(emps)
+['suresh', 'ramesh', 'rajesh', 'naresh', 'kumar', 'sandeep', 'ramesh', 'kumar', 'mahesh']
+>>> emps.remove('ramesh')
+>>> print(emps)
+['suresh', 'rajesh', 'naresh', 'kumar', 'sandeep', 'ramesh', 'kumar', 'mahesh']
+>>> emps.append(True)
+>>> emps.append(1.23)
+>>> emps.append(123)
+>>> print(emps)
+['suresh', 'rajesh', 'naresh', 'kumar', 'sandeep', 'ramesh', 'kumar', 'mahesh', True, 1.23, 123]
+>>> emps.remove('naresh')
+>>> print(emps)
+['suresh', 'rajesh', 'kumar', 'sandeep', 'ramesh', 'kumar', 'mahesh', True, 1.23, 123]
+>>> len(emps)
+10
+>>> emps[0]
+'suresh'
+>>> emps[1]
+'rajesh'
+>>> emps[10]
+Traceback (most recent call last):
+  File "<python-input-19>", line 1, in <module>
+    emps[10]
+    ~~~~^^^^
+IndexError: list index out of range
+>>> emps[9]
+123
+>>> emps.insert(1,'kpmg')
+>>> print(emps)
+['suresh', 'kpmg', 'rajesh', 'kumar', 'sandeep', 'ramesh', 'kumar', 'mahesh', True, 1.23, 123]
+>>> studs=('qwerty','ramesh','kumar','lokesh','ramesh',23.45)
+>>> type(studs)
+<class 'tuple'>
+>>> print(studs)
+('qwerty', 'ramesh', 'kumar', 'lokesh', 'ramesh', 23.45)
+>>> studs.append('praveen')
+Traceback (most recent call last):
+  File "<python-input-26>", line 1, in <module>
+    studs.append('praveen')
+    ^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'append'
+>>> studs.remove('ramesh')
+Traceback (most recent call last):
+  File "<python-input-27>", line 1, in <module>
+    studs.remove('ramesh')
+    ^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'remove'
+>>> contacts={123,1234,321,4321,4567,123,321,90}
+>>> type(contacts)
+<class 'set'>
+>>> print(contacts)
+{321, 4321, 1234, 4567, 90, 123}
+>>> contacts.add(78)
+>>> print(contacts)
+{321, 4321, 1234, 4567, 90, 123, 78}
+>>> contacts.remove(321)
+>>> print(contacts)
+{4321, 1234, 4567, 90, 123, 78}
+>>> fs=frozenset(contacts)
+>>> type(fs)
+<class 'frozenset'>
+>>> print(fs)
+frozenset({4321, 1234, 4567, 90, 123, 78})
+>>> fs.add(1234)
+Traceback (most recent call last):
+  File "<python-input-38>", line 1, in <module>
+    fs.add(1234)
+    ^^^^^^
+AttributeError: 'frozenset' object has no attribute 'add'
+>>> dict={1:'sandeep',2:"pavan",12:'rajesh',89:'mahesh',2:'kumar'}
+>>> type(dict)
+<class 'dict'>
+>>> print(dict)
+{1: 'sandeep', 2: 'kumar', 12: 'rajesh', 89: 'mahesh'}
+>>> dict.keys()
+dict_keys([1, 2, 12, 89])
+>>> dict.values()
+dict_values(['sandeep', 'kumar', 'rajesh', 'mahesh'])
 
 
+forward ,reverse
 
+slicing-->slice
 
-
-
-
-
-
-
-
-
-
-
-
-
+>>> for i in emps:
+...     print(i)
+...
+suresh
+kpmg
+rajesh
+kumar
+sandeep
+ramesh
+kumar
+mahesh
+True
+1.23
+123
+>>> emps.remove(1.23)
+>>> emps.remove(123)
+>>> emps.remove(True)
+>>> for i in emps:
+...     print(i)
+...
+suresh
+kpmg
+rajesh
+kumar
+sandeep
+ramesh
+kumar
+mahesh
+>>> for i in emps:
+...     if i.endswith("esh")
+...         print(i)
+...
+  File "<python-input-60>", line 2
+    if i.endswith("esh")
+                        ^
+SyntaxError: expected ':'
+>>> for i in emps:
+...     if i.endswith("esh"):
+...         print(i)
+...
+suresh
+rajesh
+ramesh
+mahesh
+>>> for i in emps:
+...     if len(i)<6:
+...         print(i)
+...
+kpmg
+kumar
+kumar
+>>> for i in dict.keys():
+...     print(i)
+...
+1
+2
+12
+89
+>>> for i in dict.values():
+...     print(i)
+...
+sandeep
+kumar
+rajesh
+mahesh
