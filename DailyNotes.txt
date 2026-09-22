@@ -51,7 +51,7 @@ Welcome.java
 python--->the complete python monty circus 
 
 1)oops features from C++
-2)functional programming features C 
+2)functional programming features C                             1991           java --8 2014    functional programming
 3)modular programming  from modula-3
 
 				C,ABC 
@@ -416,7 +416,7 @@ interpreter(compiler)-->pyc -->execute    py filename   pyc-->i--
 IDE-->VisualStudio Code ,pycharm,eclipse,
 
 
-
+#
 
 break                        stop     loop exit
 continue                skip        current interation skipped
@@ -450,7 +450,7 @@ Set:
 5. haterogeneous object are allowed 
 
 Frozenset:
-========
+========  imuttable version of set
 1.duplicates are not allowed 
 2.insertion order is  not preserved 
 3.frozenset({})
@@ -622,3 +622,57 @@ sandeep
 kumar
 rajesh
 mahesh
+
+
+studentmarks=[85,73,89,92,85]
+
+week days
+
+what skills-->java,python,mern,mean
+
+employee information
+
+	id			123
+	
+	list  [],tuple()
+	set{},frozenset()
+	dict{}
+	String:              ''    " "                     '''  '''           """         """ doc string
+=======
+	
+	"@123askjdo=-23k"
+	
+	list,tuple,set,fronzenset,dict
+	
+	functions:
+	==========
+	function -->block--set of lines -->code reusability
+	
+	snake_case    PEP8
+			def   add_of_two(a,b):
+				result=a+b
+				print(result)
+			def   sub_of_two(a,b):
+				result=a-b
+				return result
+		add_of_two(1,2)			
+		print(sub_of_two(1,2))
+	
+	lambda -->anonymous --concise 
+	
+	100 
+	
+	filter-->boolean condition
+	map--->map(function,iterable)
+	reduce 
+	
+	python
+	Modules:
+	=======
+	
+	
+	
+	
+	
+	
+	
