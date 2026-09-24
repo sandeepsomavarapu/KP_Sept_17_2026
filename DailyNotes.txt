@@ -50,7 +50,9 @@ Welcome.java
 	
 python--->the complete python monty circus 
 
-1)oops features from C++
+1)
+	
+	oops
 2)functional programming features C                             1991           java --8 2014    functional programming
 3)modular programming  from modula-3
 
@@ -666,9 +668,61 @@ employee information
 	map--->map(function,iterable)
 	reduce 
 	
+	
+	files--->mode  w,r,a,x,t,b(pickling,unpickling)
+				open,close,write,read,writelines,readlines
+	csv 			
+	openpyxl
+				
 	python
 	Modules:
 	=======
+	py--->module
+	
+	py filename.py
+	 demo.py
+				functions
+				variables
+				classes
+				objects
+					.....
+					....
+					
+					__name__=__main__
+			py  -m  demo.py
+			
+Module-8
+	OOPS:OOPL
+	=====                readbility ,performance,security
+	
+	oops
+			four  
+				inheritance,polymorphisam,abstraction,encapsulation
+	
+			data+behaviours  --->class
+	
+		class BankAccount:(logical) blueprint
+			accno
+			accholder
+			...
+			..
+			def withdraw():
+						pass
+			def deposit():
+						pass
+	
+	object:an object is a instance of a class (physical)
+	
+	class BankAccount:
+    balance=1000
+    def __init__(self):
+        print("from constructor")
+    def withdraw(self,accno,withdrawAmount):
+        print("withdrawl completed")
+    def deposit(self,accno,depositAmount):
+        print("deposit completed")
+account=BankAccount()#object creation syntax
+account.withdraw(111,2345)
 	
 	
 	
@@ -676,3 +730,121 @@ employee information
 	
 	
 	
+	
+	
+	variables :
+				local(method level)
+				global				
+							instance variable  (object level) ->    the value of the variable varied from  obj to obj
+									we can define inside the constructor by using self
+									inside the method also by using self 
+									outside the class by using object reference
+							
+							
+							static variable(class level)-->the value of the variable is not varied from  obj to obj
+	
+				aadhar ,contact,mail,pan,....instance
+				country name="india"
+	
+				    public 
+				_  protected
+				__private 
+	inheritance	:
+	==========		code reusability
+	
+			class X:    parent /super 
+			...
+			....
+			...
+			
+			1000 methods
+				
+			class  Y(X):  child/sub                class Z(X)
+																	100
+			...
+			...
+			20 methods
+			
+							methods		
+								instance method --the methods which has self as first parameter and if it has instance variables inside the method will call it as instance method
+																	we can call inside the class by using self and outside the class by using obj reference
+								class method-->decorator -->@classmethod,cls
+														we will only declare static variables/class variables
+														we can call by using classname or object name 
+								static method 
+												we will use @staticmethod as decorator no parameters like self,cls
+												this static method for general purpose logic  or utility logic
+												here we will not control or manage object data(instance method using self) and class data (class method using cls) 
+								
+								1+2=3
+								"s"+"a"=sa
+								@abstractmethod
+								
+								__str__ default method which is available for every class which will give the object address and we can override for our implementation
+								
+			Module9:
+						
+								x=123
+								y=x
+								
+								x                   object 123
+								y             
+			python object model
+							x=123
+							name="sandeep"
+							numbers=[1,2,3,4,5,5]
+						
+def m1():
+		pass
+				object 
+							identity    id()
+							type	
+							value
+								
+								x=123
+								y=x
+							list,set,dict --->muttable	
+							int,bool,str,float,tuple,frozenset-->imuttable
+							
+							Object
+								->Reference count
+Exception handling:
+=================						
+							
+			the problems with out exception handling	
+				1.system defined error messages 
+				2.abnormal termination
+				
+				1
+				2      * ---->stop the execution
+				3
+				4
+				5
+				
+				
+				10000
+				
+				the advantages with exception handling
+				
+				1.user friendly error messages
+				2.normal termination
+				
+				try,except,finally,raise,else
+				
+				try-->error code /risky code
+																							BaseException
+																							
+																					Exception
+					AE
+					ZeroDivisionError
+
+		
+																							
+				
+				
+					
+							
+							
+							
+							
+							

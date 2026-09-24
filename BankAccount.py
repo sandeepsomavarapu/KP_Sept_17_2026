@@ -1,15 +1,24 @@
 class BankAccount:
     countryName="India"
-    def __init__(self,accno,accHolder,balance,branch):
+    count =0  #static variable
+    def __init__(self,accno,accHolder,balance):
+        BankAccount.count=BankAccount.count+1
         print(__name__)
         print("constructor is called")
         print("object is getting created ")
         self.accno=accno            #instance variables  self
         self.accHolder=accHolder
         self.balance=balance
-        self.branch=branch
     def __del__(self):
          print("Object is getting destroyed")  
+    @staticmethod     
+    def utility_method():
+         print("utility logic")     
+    @classmethod
+    def info(cls):
+        print("from class method objects count is :",cls.count)
+        BankAccount.branch="hyderabad"#static variable
+
     def withdraw(self,withdrawAmount):
         self.dateOfTransaction='23-09-2026'
         self.balance=self.balance-withdrawAmount
@@ -17,13 +26,19 @@ class BankAccount:
     def deposit(self,depositAmount):
         self.balance=self.balance+depositAmount
         print(f"Mr {self.accHolder} After Deposit updated balance",self.balance)
+        # self.balance_enquiry()
     def balance_enquiry(self):
-            print("Hello Mr {self.accHolder}  After Balance : ",self.balance)    
+            print(f"Hello Mr {self.accHolder}  Balance : ",self.balance)    
 
-account=BankAccount(100,"sandeep",1000,"Hyderabad")#object creation syntax
-account1=BankAccount(101,"suresh",2000,"delhi")#object creation syntax
+  
+account=BankAccount(100,"sandeep",1000)#object creation syntax
+account1=BankAccount(101,"suresh",2000)#object creation syntax
 account.withdraw(200)
+print(account)
+
+
 account1.withdraw(200)
+print(account.__dict__)
 
 account.withdraw(100)
 account1.deposit(345)
@@ -42,12 +57,34 @@ if __name__=="__main__":
     print("---running tests inside the BankAccount.py")
 
 class OnlineBankAccount(BankAccount):
-
-     def __init__(self, accno, accHolder, balance, branch):
-          super().__init__(accno, accHolder, balance, branch)
-             
+     count=123
+     def __init__(self, accno, accHolder, balance):
+          super().__init__(accno, accHolder, balance)
+     def __str__(self):
+          return "after overriding str...."
      def aadhar_otp_linking(self,otp):
+        
         pass 
-OAccount=OnlineBankAccount(222,"mahesh",9000,'hyderabad')
+     def balance_enquiry(self):
+            super().balance_enquiry()
+            print(super().count)
+            print(OnlineBankAccount.count)
+            print(f"Hi Mr {self.accHolder}  Balance : ",self.balance)    
+     
+OAccount=OnlineBankAccount(222,"mahesh",9000)
 OAccount.deposit(2000)     
+OAccount.balance_enquiry()
+print(OAccount.count)
+print("Object Info:",OAccount)
 
+BankAccount.info()
+print("Branch",BankAccount.branch)
+
+# class C(BankAccount,OnlineBankAccount):#multiple Inheritance
+#      pass
+
+# class C(BankAccount):#Hirarchie level Inheritance
+#      pass
+
+# class C(OnlineBankAccount):#multilevel Inheritance
+#      pass
