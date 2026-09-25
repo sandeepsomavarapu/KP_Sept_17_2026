@@ -831,10 +831,22 @@ Exception handling:
 				
 				try,except,finally,raise,else
 				
-				try-->error code /risky code
-																							BaseException
-																							
-																					Exception
+					try-->error code /risky code
+					except--->handling code 
+					finally-->cleanup code    will execute always     whether exception raised or not whether exception handled or not
+																				BaseException
+					else		-->will execute only when there is no error			
+					raise	-->the keyword which is used raise/throw exception explicitly 
+																					custom Exception
+												class InsufficientBalance(BaseException):
+														def __init__(self,message):
+																	super(message):
+																	.....
+												
+												class InsufficientBalance(Exception):
+												
+																
+													
 					AE
 					ZeroDivisionError
 
