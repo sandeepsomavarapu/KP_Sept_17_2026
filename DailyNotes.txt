@@ -850,13 +850,53 @@ Exception handling:
 					AE
 					ZeroDivisionError
 
-		
-																							
-				
-				
+Debugging		
+							syntax errors																
+							runtime errors
+							logic error 
+										area -->length+width
+										area -->length*width
+							print
 					
+							IDE-->VSCode
+Module 12:
+==========
+							Regular Expressions
 							
+							indian contact :10 digit 
+														 6789(9)
+							121212121
 							
+							mailid 
 							
+							validation
+		re (python)  
+import re	
+
+    pattern=re.compile("ab")	
 							
-							
+	matcher=pattern.finditer("abaaababab")	
+	
+			start-->returns start index of the match
+			end->returns  end+1 index of the match
+			group-->return s the matched string 		
+
+openpyxl			
+			
+			dataframe 
+			series 
+		
+Series:
+======	N D
+			table -->column 1-d
+			
+			dob
+			2021-12-01
+			01-12-2021
+			01-dec-2021
+			
+			duplicates-->drop_duplicates
+			
+			
+			
+			
