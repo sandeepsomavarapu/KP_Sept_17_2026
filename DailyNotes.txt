@@ -897,6 +897,137 @@ Series:
 			
 			duplicates-->drop_duplicates
 			
+Chunk Processing
+			pd.read_csv("csv")10000000
+					chunks-->10 each chunk 1 lack rows 
+					
+					
+Vectorized Operations
+
+
+
+
+concurrency:
+multiple tasks are in progress and the system can switch between them
+parallelism:
+will use multiple cpu core
+
+Process:
+====== a running instance of a program
+
+Thread:
+======
+ it is a smallest unit of process
+ 
+multi tasking
+
+				process based multitasking : running multiple tasks simultaniously  where each task is seperate independent process
+				thread based multi tasking:running multiple tasks simultaniously where all tasks belongs to the process
+				multi threading
+				python 
+
+import threading 
+
+
+segment1
+
+
+segment2 
+
+
+segment3 
+creating thread in different  ways
+1)creating thread with out any class
+2)creating thread by taking class and extending thread class
+3)creating thread with out extending thread class
+
+ThreadPool Executor:
+------------------------
+from concurrent.futures import  ThreadPoolExecutor 
 			
+	 AsyncIO		:
+	 ==========
+	 async def hello():
+		print("Hello")
+	 
+			coroutine object 
+	 
+		weather API                         call weather api--->wait-->call payment api-->wait--->call employee-->wait  
+		payment API
+		Employee API
+	 
+		async def  demo():
+		
+			await
+	 Module15:
+	 ==========
+											JSON,Xml,PT,HTMl
+						app            webservices                 app
+				sbi atm machine   <--->icici bank server 
+						
+				icici atm card 
+	 
+				phonepe
+		
+					RMI,SP,EJB
+					RPC-->c,c++
+	 emp=Employee(123,"suresh",9000,"hyderabad")
+	 JSON
+	 {
+	 "eid":123,
+	 "ename":"suresh",
+	 "esal":9000,
+	"address":{
+					"city":"hyderabad",
+					"country":"india",
+					"pincode":508278
+					}
+	"skills":["python","
+					java"]
+					
+	 }
+	 JSON
+	 
+		SOAP--->XMl
+		REST-->Xml,JSON,PT,Html,....
+				app1   <--------->   app2
+									REST  API   usersAPI
+										GET
+										POST
+										PUT
+										DELETE
+	 
+	 JSON
+	 
+	 status codes
+				2XX -->success
+						200 oK
+						201 created
+			   4XX-->client side error
+					404--not found
+					400
+			5XX	-->server side error
 			
-			
+			FAST API
+	 
+	 sqlite3
+				
+				
+	pyodbc	+mysql		
+	 
+	 python
+	 pip install pyspark
+	 
+	 MapReduce :processing large data sets in parallel
+	 
+	 RDD:resilient distributed datasets
+	 
+	 pyspark df
+	 
+	 transaformations (lazy)
+	 
+	 actions(eager)
+	 
+	 
+	 
+	 
